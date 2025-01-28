@@ -1,8 +1,35 @@
-import InstagramLineIcon from 'remixicon-react/InstagramLineIcon';
-import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon';
+import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon';
+import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
+import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon';
+import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon';
+import AwardFillIcon from 'remixicon-react/AwardFillIcon';
+import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon';
+import CheckLineIcon from 'remixicon-react/CheckLineIcon';
+import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon';
+// Navbar
+import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon';
+import DownloadLineIcon from 'remixicon-react/DownloadLineIcon';
 import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon';
-import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon';
+import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon';
+// About Me
+import GithubFillIcon from 'remixicon-react/GithubFillIcon';
 import GithubLineIcon from 'remixicon-react/GithubLineIcon';
+import GroupLineIcon from 'remixicon-react/GroupLineIcon';
+import HistoryLineIcon from 'remixicon-react/HistoryLineIcon';
+import Home5LineIcon from 'remixicon-react/Home5LineIcon';
+import InstagramLineIcon from 'remixicon-react/InstagramLineIcon';
+// Toggle
+import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon';
+import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon';
+import Projector2LineIcon from 'remixicon-react/Projector2LineIcon';
+import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon';
+import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon';
+import StarFillIcon from 'remixicon-react/StarFillIcon';
+import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon';
+import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon';
+import UserLineIcon from 'remixicon-react/UserLineIcon';
+import UserStarLineIcon from 'remixicon-react/UserStarLineIcon';
+import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon';
 
 export const heroIcons = [
   <InstagramLineIcon />,
@@ -11,12 +38,6 @@ export const heroIcons = [
   <YoutubeLineIcon />,
   <GithubLineIcon />
 ];
-
-// About Me
-import GithubFillIcon from 'remixicon-react/GithubFillIcon';
-import Projector2LineIcon from 'remixicon-react/Projector2LineIcon';
-import GroupLineIcon from 'remixicon-react/GroupLineIcon';
-import AwardFillIcon from 'remixicon-react/AwardFillIcon';
 
 export const aboutData = [
   {
@@ -40,9 +61,6 @@ export const aboutData = [
     icon: <AwardFillIcon />
   }
 ];
-
-import DownloadLineIcon from 'remixicon-react/DownloadLineIcon';
-import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
 
 export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
@@ -180,11 +198,6 @@ export const skillsData = [
   }
 ];
 
-import StarFillIcon from 'remixicon-react/StarFillIcon';
-import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon';
-import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon';
-import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon';
-
 export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />];
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />];
 
@@ -262,7 +275,7 @@ export const projectsData = [
     name: 'GreenLeafGardens.biz',
     desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
     url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion']
+    tech: ['ReactJS', 'TailwindCSS', 'CSS', 'FramerMotion']
   },
   {
     name: 'PixelPerfectDesigns.info',
@@ -355,8 +368,6 @@ export const pricingPlans = [
   }
 ];
 
-import CheckLineIcon from 'remixicon-react/CheckLineIcon';
-
 export const checkIcon = <CheckLineIcon />;
 
 // Q & A
@@ -419,23 +430,9 @@ export const questions = [
   }
 ];
 
-import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon';
 export const questionArrow = <ArrowDropDownLineIcon />;
 
-// Navbar
-import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon';
-
 export const copyRightIcon = <CopyrightLineIcon />;
-
-import Home5LineIcon from 'remixicon-react/Home5LineIcon';
-import UserLineIcon from 'remixicon-react/UserLineIcon';
-import HistoryLineIcon from 'remixicon-react/HistoryLineIcon';
-import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon';
-import UserStarLineIcon from 'remixicon-react/UserStarLineIcon';
-import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon';
-import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon';
-import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon';
-import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon';
 
 export const navbarData = [
   {
@@ -484,10 +481,6 @@ export const navbarData = [
     icon: <QuestionAnswerLineIcon />
   }
 ];
-
-// Toggle
-import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon';
-import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon';
 
 export const sunIcon = <SunFoggyFillIcon />;
 export const moonIcon = <MoonFoggyFillIcon />;

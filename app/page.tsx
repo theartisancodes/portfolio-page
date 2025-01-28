@@ -18,8 +18,8 @@ import {
 } from '@/components';
 
 export default function Home() {
-  const [id, setId] = useState(0);
-  const compsRef = useRef(null);
+  const [id, setId] = useState<string>('');
+  const compsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +34,9 @@ export default function Home() {
       { threshold: 0.3 }
     );
 
-    const compsArr = Array.from(compsRef.current.children);
+    const compsArr = compsRef.current
+      ? Array.from(compsRef.current.children)
+      : [];
     compsArr.forEach((comp) => {
       observer.observe(comp);
     });

@@ -8,8 +8,8 @@ import { Heading, Project } from '@/components';
 const Projects = () => {
   const [tech, setTech] = useState('All');
   const [index, setIndex] = useState(0);
-  const prevIndex = useRef<number>(0);
-  const buttonsRef = useRef<number[]>([]);
+  const prevIndex = useRef(0);
+  const buttonsRef = useRef<HTMLButtonElement[]>([]);
 
   const handleClick = () => {
     animate(buttonsRef.current[prevIndex.current], {
@@ -31,7 +31,9 @@ const Projects = () => {
           <motion.button
             key={i}
             initial={{ opacity: i === 0 ? 1 : 0.5, scale: i === 0 ? 1.2 : 1 }}
-            ref={(el) => buttonsRef.current.push(el)}
+            ref={(value) => {
+              if (value) buttonsRef.current.push(value);
+            }}
             onClick={() => {
               setTech(text);
               setIndex(i);

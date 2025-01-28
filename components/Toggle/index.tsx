@@ -36,8 +36,6 @@ const Toggle = ({ children }: ToggleProps) => {
     } else {
       darkThemeParsed ? addDarkTheme() : removeDarkTheme();
     }
-
-    console.log(darkTheme, darkThemeParsed, systemTheme);
   }, []);
 
   return (
