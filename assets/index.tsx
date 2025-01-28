@@ -1,4 +1,3 @@
-// Hero
 import InstagramLineIcon from 'remixicon-react/InstagramLineIcon';
 import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon';
 import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon';
@@ -56,38 +55,44 @@ export const aboutText =
 export const experienceData = [
   {
     year: 1,
-    title: 'Frontend Developer • Starcity',
-    education:
-      'React, Styled Components, Figma, UI/UX Design, Payment Integrations',
+    title: 'Frontend Developer',
+    company: 'StarCity',
     experience: [
-      'Implemented a user-friendly onboarding system, improving client acquisition and payment processing efficiency.',
-      'Rebuilt frontend code from ClojureScript to React, reducing hiring time by 50% and costs by 15%.',
-      'Created a reusable React library, decreasing code duplication by 30% and streamlining development processes.'
+      'Improved client acquisition and payment processing efficiency.',
+      'Reduced hiring time and costs by transitioning from ClojureScript to React.',
+      'Decreased code duplication and streamlined development processes.'
     ],
-    skills: ['React', 'TypeScript', 'UI/UX Design', 'ClojureScript']
+    skills: [
+      'React',
+      'TypeScript',
+      'UI/UX Design',
+      'ClojureScript',
+      'Styled Components',
+      'Plaid & Stripe Integrations'
+    ]
   },
   {
     year: 2,
-    title: 'Full Stack Developer • Andela',
-    education: 'Computer & Information Systems • Kenya Methodist University',
+    title: 'Full Stack Developer',
+    company: 'Andela',
     experience: [
-      'Built a decision-support system using ReactJS, NodeJS, and PostgreSQL, reducing client churn by 30%.',
-      'Developed a matching platform that increased client connections by 100%, contributing to $200M+ in Series B and C funding.',
-      'Graduated from the Andela Bootcamp and Apprenticeship Program, ranking in the top 1% of junior developers.'
+      'Reduced client churn by 30% with a decision-support system.',
+      'Increased client connections by 100%, contributing to significant funding.',
+      'Ranked in the top 1% of junior developers in the Andela Bootcamp.'
     ],
     skills: ['React', 'Node.js', 'Python', 'gRPC', 'PostgreSQL', 'REST API']
   },
   {
     year: 3,
-    title: 'Senior Frontend Developer • Lori Systems',
-    education: 'Advanced Certifications in React, TypeScript, and AWS',
+    title: 'Senior Frontend Developer',
+    company: 'Lori Systems',
     experience: [
-      'Led a cross-functional team to develop core business applications, enhancing operational efficiency and scalability.',
-      'Implemented a Progressive Web Application (PWA), improving transporter and cargo matching by 25%.',
-      'Optimized web application performance using Webpack, increasing speed by 30%.',
-      'Reduced bug rate by 20% and achieved 90% code coverage through rigorous testing and debugging.',
-      'Mentored junior developers, improving team productivity by 40%.',
-      'Initiated a project for code modularity and reuse, reducing bundle size by 90% and cutting development costs by 15%.'
+      'Enhanced operational efficiency and scalability with core business applications.',
+      'Improved transporter and cargo matching by 25% with a PWA.',
+      'Increased web application speed by 30% improved bundling techniques through webpack.',
+      'Achieved 90% code coverage and reduced bug rate by 20%.',
+      'Improved team productivity by mentoring junior developers.',
+      'Reduced bundle size by 90% and development costs by 15% through code modularity.'
     ],
     skills: [
       'React',

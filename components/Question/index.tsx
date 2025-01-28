@@ -1,7 +1,8 @@
 'use client';
-import { questionArrow } from '@/assets';
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { questionArrow } from '@/assets';
 
 interface QuestionProps {
   data: {

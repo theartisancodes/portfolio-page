@@ -1,12 +1,13 @@
 'use client';
-import Heading from './sub/Heading';
+
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { skillsData } from '@/assets';
-import { motion } from 'framer-motion';
+import { Heading } from '@/components';
 
 const Skills = () => {
   const variants = {
-    visible: (i) => ({
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {

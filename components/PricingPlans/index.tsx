@@ -1,7 +1,8 @@
 'use client';
-import Heading from './sub/Heading';
-import { pricingPlans, checkIcon } from '@/assets';
+
 import { motion } from 'framer-motion';
+import { checkIcon, pricingPlans } from '@/assets';
+import { Heading } from '@/components';
 
 const PricingPlans = () => {
   return (

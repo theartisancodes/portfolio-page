@@ -1,5 +1,6 @@
 'use client';
-import { navbarData, copyRightIcon } from '@/assets';
+
+import { copyRightIcon, navbarData } from '@/assets';
 
 interface NavbarProps {
   id: string | number;

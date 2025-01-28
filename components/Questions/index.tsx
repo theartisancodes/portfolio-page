@@ -1,7 +1,7 @@
 'use client';
-import Heading from './sub/Heading';
-import Question from './sub/Question';
+
 import { questions } from '@/assets';
+import { Heading, Question } from '@/components';
 
 const Questions = () => {
   return (

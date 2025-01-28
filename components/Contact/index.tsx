@@ -1,7 +1,8 @@
 'use client';
-import Heading from './sub/Heading';
-import Image from 'next/image';
+
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Heading } from '@/components';
 
 const Contact = () => {
   return (

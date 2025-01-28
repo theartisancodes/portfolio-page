@@ -1,27 +1,44 @@
 'use client';
-import Heading from './sub/Heading';
-import Image from 'next/image';
-import { reviewsData, starIcons, arrowIcons } from '@/assets';
-import { useState, useRef, useEffect } from 'react';
+
+import { useEffect, useRef, useState } from 'react';
 import { animate, motion } from 'framer-motion';
+import Image from 'next/image';
+import { arrowIcons, reviewsData, starIcons } from '@/assets';
+import { Heading } from '@/components';
 
 const Reviews = () => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(false);
   const prevIndex = useRef(0);
-  const slides = useRef([]);
+  const slides = useRef<(HTMLDivElement | null)[]>([]);
 
   const rightClickHandler = () => {
-    animate(slides.current[index], { x: 0 }, { delay: 0.3 });
-    animate(slides.current[prevIndex.current], {
-      scale: index === 0 ? 1 : 0.4,
-      rotate: index === 0 ? 0 : index % 2 === 0 ? 10 : -10
-    });
+    const currentSlide = slides.current[index];
+    const previousSlide = slides.current[prevIndex.current];
+
+    if (currentSlide) {
+      animate(currentSlide, { x: 0 }, { delay: 0.3 });
+    }
+
+    if (previousSlide) {
+      animate(previousSlide, {
+        scale: index === 0 ? 1 : 0.4,
+        rotate: index === 0 ? 0 : index % 2 === 0 ? 10 : -10
+      });
+    }
   };
 
   const leftClickHandler = () => {
-    animate(slides.current[index], { scale: 1, rotate: 0 }, { delay: 0.2 });
-    animate(slides.current[prevIndex.current], { x: '100%' });
+    const currentSlide = slides.current[index];
+    const previousSlide = slides.current[prevIndex.current];
+
+    if (currentSlide) {
+      animate(currentSlide, { scale: 1, rotate: 0 }, { delay: 0.2 });
+    }
+
+    if (previousSlide) {
+      animate(previousSlide, { x: '100%' });
+    }
   };
 
   useEffect(() => {
@@ -45,7 +62,11 @@ const Reviews = () => {
               initial={{ x: '100%' }}
               key={i}
               className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 lg:gap-y-4 border border-yellow-500 bg-zinc-50 p-14 lg:p-5 rounded-xl dark:bg-zinc-700 transition-colors"
-              ref={(el) => slides.current.push(el)}
+              ref={(el) => {
+                if (el && !slides.current.includes(el)) {
+                  slides.current.push(el);
+                }
+              }}
             >
               <Image
                 src={review.image}

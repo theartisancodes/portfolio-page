@@ -1,24 +1,22 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
-import Heading from './sub/Heading';
-import Project from './sub/Project';
-import { projectsData, projectsButton } from '@/assets';
+
+import { useEffect, useRef, useState } from 'react';
 import { animate, motion } from 'framer-motion';
+import { projectsButton, projectsData } from '@/assets';
+import { Heading, Project } from '@/components';
 
 const Projects = () => {
   const [tech, setTech] = useState('All');
   const [index, setIndex] = useState(0);
-  const prevIndex = useRef<HTMLButtonElement | number>(0);
-  const buttonsRef = useRef([]);
+  const prevIndex = useRef<number>(0);
+  const buttonsRef = useRef<number[]>([]);
 
   const handleClick = () => {
-    if (typeof prevIndex.current === 'number') {
-      animate(buttonsRef.current[prevIndex.current], {
-        opacity: 0.5,
-        scale: 1
-      });
-      animate(buttonsRef.current[index], { opacity: 1, scale: 1.2 });
-    }
+    animate(buttonsRef.current[prevIndex.current], {
+      opacity: 0.5,
+      scale: 1
+    });
+    animate(buttonsRef.current[index], { opacity: 1, scale: 1.2 });
   };
 
   useEffect(() => {

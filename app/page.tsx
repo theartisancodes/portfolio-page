@@ -1,19 +1,21 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Experience from '../components/Experience';
-import Skills from '../components/Skills';
-import Reviews from '../components/Reviews';
-import Projects from '../components/Projects';
-import PricingPlans from '../components/PricingPlans';
-import Contact from '../components/Contact';
-import Questions from '../components/Questions';
-import Navbar from '../components/Navbar';
-import Toggle from '../components/sub/Toggle';
-import Load from '../components/sub/Load';
+import { useEffect, useRef, useState } from 'react';
 import { personName } from '@/assets';
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Load,
+  Navbar,
+  PricingPlans,
+  Projects,
+  Questions,
+  Reviews,
+  Skills,
+  Toggle
+} from '@/components';
 
 export default function Home() {
   const [id, setId] = useState(0);

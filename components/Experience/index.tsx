@@ -1,9 +1,10 @@
 'use client';
-import Heading from './sub/Heading';
+
+import { useRef } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import { arrowLeftIcon, experienceData } from '@/assets';
-import { motion, useScroll, useSpring } from 'framer-motion';
-import { useRef } from 'react';
+import { Heading } from '@/components';
 
 const Experience = () => {
   const date = new Date().getFullYear();
@@ -52,7 +53,7 @@ const Experience = () => {
               <p className="text-gray-800 dark:text-gray-100">
                 <span className="block font-light">Education:</span>
                 <span className="block pl-2 font-extralight">
-                  {data.education}
+                  {data.company}
                 </span>
               </p>
               <div className="text-gray-800 dark:text-gray-200 transition-colors">

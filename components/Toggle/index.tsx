@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { moonIcon, sunIcon } from '@/assets';
-import { reactLocalStorage } from 'reactjs-localstorage';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { reactLocalStorage } from 'reactjs-localstorage';
+import { moonIcon, sunIcon } from '@/assets';
 
 interface ToggleProps {
   children: React.ReactNode;
@@ -11,20 +11,16 @@ interface ToggleProps {
 
 const Toggle = ({ children }: ToggleProps) => {
   const [darkTheme, setDarkTheme] = useState(false);
-  const mainRef = useRef<HTMLDivElement | null>(null);
+  const mainRef = useRef<HTMLDivElement>(null);
 
   const addDarkTheme = () => {
-    if (mainRef.current) {
-      mainRef.current.classList.add('dark');
-      setDarkTheme(true);
-    }
+    mainRef.current!.classList.add('dark');
+    setDarkTheme(true);
   };
 
   const removeDarkTheme = () => {
-    if (mainRef.current) {
-      mainRef.current.classList.add('dark');
-      setDarkTheme(false);
-    }
+    mainRef.current!.classList.remove('dark');
+    setDarkTheme(false);
   };
 
   useEffect(() => {
@@ -40,7 +36,10 @@ const Toggle = ({ children }: ToggleProps) => {
     } else {
       darkThemeParsed ? addDarkTheme() : removeDarkTheme();
     }
+
+    console.log(darkTheme, darkThemeParsed, systemTheme);
   }, []);
+
   return (
     <main ref={mainRef}>
       <div className="bg-zinc-50 dark:bg-zinc-800">

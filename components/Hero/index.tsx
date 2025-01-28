@@ -1,8 +1,9 @@
 'use client';
+
 import React, { useState } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { heroIcons } from '@/assets';
-import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion';
 
 interface HeroProps {
   personName: string;

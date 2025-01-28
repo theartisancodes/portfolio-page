@@ -1,9 +1,8 @@
 'use client';
 
-import Heading from './sub/Heading';
-import Achievements from './sub/Achievements';
 import Image from 'next/image';
-import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from '@/assets';
+import { aboutData, aboutText, arrowLeftIcon, downloadIcon } from '@/assets';
+import { Achievements, Heading } from '@/components';
 
 const About = () => {
   return (
