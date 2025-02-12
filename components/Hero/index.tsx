@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { heroIcons } from '@/assets';
 
 const Hero: React.FC = () => {
-  // Initialize with current window dimensions (with fallback values)
   const [windowOffset, setWindowOffset] = useState({
     innerWidth: typeof window !== 'undefined' ? window.innerWidth : 1000,
     innerHeight: typeof window !== 'undefined' ? window.innerHeight : 800
@@ -17,7 +16,6 @@ const Hero: React.FC = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  // Update window dimensions on resize
   useEffect(() => {
     const handleResize = () => {
       setWindowOffset({
@@ -70,7 +68,6 @@ const Hero: React.FC = () => {
           <motion.div
             className="flex items-center justify-center"
             style={{
-              // Apply the transforms only if the mouse has moved
               rotateX: mouseMove ? rotateX : 0,
               rotateY: mouseMove ? rotateY : 0,
               transition: '0.1s'
