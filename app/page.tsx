@@ -47,7 +47,7 @@ export default function Home() {
       <Toggle>
         <Navbar id={id} />
         <div ref={compsRef}>
-          <Hero personName={personName} />
+          <Hero />
           <About />
           <Experience />
           <Skills />

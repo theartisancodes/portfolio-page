@@ -94,13 +94,12 @@ const Hero: React.FC = () => {
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
           {heroIcons.map((icon, i) => (
-            <a
-              href="#"
+            <div
               key={i}
               className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
             >
               {icon}
-            </a>
+            </div>
           ))}
         </motion.div>
         <motion.a
