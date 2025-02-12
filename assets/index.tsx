@@ -72,9 +72,26 @@ export const aboutText =
 
 export const experienceData = [
   {
-    year: 1,
+    year: 2017,
+    title: 'Full Stack Developer',
+    company: 'Andela',
+    url: 'https://andela.com',
+    date: '2017',
+    timeline: 'March 2017 - September 2019',
+    experience: [
+      'Reduced client churn by 30% with a decision-support system.',
+      'Increased client connections by 100%, contributing to significant funding.',
+      'Ranked in the top 1% of junior developers in the Andela Bootcamp.'
+    ],
+    skills: ['React', 'Node.js', 'Python', 'gRPC', 'PostgreSQL', 'REST API']
+  },
+  {
+    year: 2019,
     title: 'Frontend Developer',
     company: 'StarCity',
+    url: 'https://www.ycombinator.com/companies/starcity',
+    date: '2019',
+    timeline: 'Jan 2019 - August 2019',
     experience: [
       'Improved client acquisition and payment processing efficiency.',
       'Reduced hiring time and costs by transitioning from ClojureScript to React.',
@@ -90,27 +107,17 @@ export const experienceData = [
     ]
   },
   {
-    year: 2,
-    title: 'Full Stack Developer',
-    company: 'Andela',
-    experience: [
-      'Reduced client churn by 30% with a decision-support system.',
-      'Increased client connections by 100%, contributing to significant funding.',
-      'Ranked in the top 1% of junior developers in the Andela Bootcamp.'
-    ],
-    skills: ['React', 'Node.js', 'Python', 'gRPC', 'PostgreSQL', 'REST API']
-  },
-  {
-    year: 3,
+    year: 2019,
     title: 'Senior Frontend Developer',
     company: 'Lori Systems',
+    url: 'https://www.lorisystems.com/',
+    date: '2025',
+    timeline: 'October 2019 - Current',
     experience: [
-      'Enhanced operational efficiency and scalability with core business applications.',
-      'Improved transporter and cargo matching by 25% with a PWA.',
-      'Increased web application speed by 30% improved bundling techniques through webpack.',
-      'Achieved 90% code coverage and reduced bug rate by 20%.',
-      'Improved team productivity by mentoring junior developers.',
-      'Reduced bundle size by 90% and development costs by 15% through code modularity.'
+      'Enhanced operational efficiency and scalability by developing core business applications. ',
+      'Improved cargo matching by 25% through a responsive PWA and boosted web app speed by 30% using advanced Webpack techniques.',
+      'Achieved 90% code coverage, reduced bugs by 20%, and cut bundle size by 90%, lowering development costs by 15%.',
+      'Mentored junior developers, significantly improving team productivity.'
     ],
     skills: [
       'React',
@@ -125,20 +132,12 @@ export const experienceData = [
 // Skills
 export const skillsData = [
   {
-    name: 'Figma',
-    icon: '/skills/figma.png'
+    name: 'NextJS',
+    icon: '/skills/nextjs.png'
   },
   {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png'
-  },
-  {
-    name: 'Blender',
-    icon: '/skills/blender.png'
-  },
-  {
-    name: 'VS Code',
-    icon: '/skills/vscode.png'
+    name: 'NodeJS',
+    icon: '/skills/nodejs.png'
   },
   {
     name: 'HTML',
@@ -169,8 +168,8 @@ export const skillsData = [
     icon: '/skills/ts.png'
   },
   {
-    name: 'AI',
-    icon: '/skills/ai.png'
+    name: 'Figma',
+    icon: '/skills/figma.png'
   },
   {
     name: 'Framer Motion',
@@ -181,20 +180,24 @@ export const skillsData = [
     icon: '/skills/threejs.png'
   },
   {
-    name: 'NextJS',
-    icon: '/skills/nextjs.png'
-  },
-  {
-    name: 'NodeJS',
-    icon: '/skills/nodejs.png'
-  },
-  {
     name: 'MongoDB',
     icon: '/skills/mongodb.png'
   },
   {
-    name: 'Github',
-    icon: '/skills/github.png'
+    name: 'Styled Components',
+    icon: '/skills/styled-components.png'
+  },
+  {
+    name: 'PostgreSQL',
+    icon: '/skills/postgresql.jpg'
+  },
+  {
+    name: 'AWS',
+    icon: '/skills/awslogo.jpg'
+  },
+  {
+    name: 'Appwrite',
+    icon: '/skills/appwrite.png'
   }
 ];
 
@@ -305,8 +308,6 @@ export const projectsData = [
 
 export const projectsButton = [
   'All',
-  'Figma',
-  'Photoshop',
   'HTML',
   'CSS',
   'JavaScript',
@@ -314,7 +315,8 @@ export const projectsButton = [
   'TailwindCSS',
   'NextJS',
   'FramerMotion',
-  'ThreeJS'
+  'ThreeJS',
+  'NodeJS'
 ];
 
 // Pricing Plans
@@ -456,29 +458,14 @@ export const navbarData = [
     icon: <BriefcaseLineIcon />
   },
   {
-    id: 'reviews',
-    name: 'Reviews',
-    icon: <UserStarLineIcon />
-  },
-  {
     id: 'projects',
     name: 'Projects',
     icon: <ProjectorLineIcon />
   },
   {
-    id: 'pricing',
-    name: 'Pricing',
-    icon: <PriceTag3LineIcon />
-  },
-  {
     id: 'contact',
     name: 'Contact',
     icon: <ContactsBook2LineIcon />
-  },
-  {
-    id: 'questions',
-    name: 'Questions',
-    icon: <QuestionAnswerLineIcon />
   }
 ];
 

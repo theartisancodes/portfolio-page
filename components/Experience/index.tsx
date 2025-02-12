@@ -1,10 +1,19 @@
 'use client';
 
 import { useRef } from 'react';
+import { clsx } from 'clsx';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import { arrowLeftIcon, experienceData } from '@/assets';
 import { Heading } from '@/components';
+
+
+const experienceStyles = clsx([
+  'relative flex flex-col gap-y-3',
+  'rounded-md border border-red-300 bg-white',
+  'p-4 tracking-wide sm:text-sm dark:bg-zinc-700',
+  'transition-colors z-20 cursor-pointer'
+]);
 
 const Experience = () => {
   const date = new Date().getFullYear();
@@ -19,7 +28,7 @@ const Experience = () => {
   const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 });
   return (
     <div id="experience" className="relative py-20">
-      <Heading text={'Experience & Education'} />
+      <Heading text={'Experience'} />
       <Image
         src={'/education.png'}
         alt={'Experience Image'}
@@ -43,17 +52,29 @@ const Experience = () => {
             <motion.div
               initial={{ opacity: 0, x: i % 2 === 0 ? -80 : 80 }}
               whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.05 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, type: 'spring', stiffness: 50 }}
-              className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors z-20"
+              className={experienceStyles}
             >
               <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white">
                 {data.title}
               </h1>
-              <p className="text-gray-800 dark:text-gray-100">
-                <span className="block font-light">Education:</span>
-                <span className="block pl-2 font-extralight">
+              <p className="text-gray-800 dark:text-gray-100 flex">
+                <span className="block font-light">Company:</span>
+                <a
+                  href={data.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block pl-2 font-extralight text-blue-500 hover:underline"
+                >
                   {data.company}
+                </a>
+              </p>
+              <p className="text-gray-800 dark:text-gray-100 flex">
+                <span className="block font-light">Timeline:</span>
+                <span className="block pl-2 font-extralight">
+                  {data.timeline}
                 </span>
               </p>
               <div className="text-gray-800 dark:text-gray-200 transition-colors">
@@ -81,7 +102,7 @@ const Experience = () => {
                   : 'right-full translate-x-1/2 lg:right-1/2'
               }`}
             >
-              {date - experienceData.length + i + 1}
+              {data.year}
             </div>
           </div>
         ))}

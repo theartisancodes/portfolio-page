@@ -46,16 +46,13 @@ export default function Home() {
       <Load />
       <Toggle>
         <Navbar id={id} />
-        <div className="w-min" ref={compsRef}>
+        <div ref={compsRef}>
           <Hero personName={personName} />
           <About />
           <Experience />
           <Skills />
-          <Reviews />
           <Projects />
-          <PricingPlans />
           <Contact />
-          <Questions />
         </div>
       </Toggle>
     </>
