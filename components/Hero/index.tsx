@@ -1,34 +1,42 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Introduction from '@components/Hero/Introduction';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { heroIcons } from '@/assets';
 
-interface HeroProps {
-  personName: string;
-}
-
-const Hero = ({ personName }: HeroProps) => {
+const Hero: React.FC = () => {
+  // Initialize with current window dimensions (with fallback values)
   const [windowOffset, setWindowOffset] = useState({
-    innerWidth: 0,
-    innerHeight: 0
+    innerWidth: typeof window !== 'undefined' ? window.innerWidth : 1000,
+    innerHeight: typeof window !== 'undefined' ? window.innerHeight : 800
   });
   const [mouseMove, setMouseMove] = useState(false);
-  const [buttonHover, setButtonHover] = useState(false);
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  // Update window dimensions on resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowOffset({
+        innerWidth: window.innerWidth,
+        innerHeight: window.innerHeight
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = e;
     x.set(clientX);
     y.set(clientY);
   };
+
   const handleMouseEnter = () => {
-    setWindowOffset({
-      innerWidth: window.innerWidth,
-      innerHeight: window.innerHeight
-    });
     setMouseMove(true);
   };
 
@@ -37,8 +45,13 @@ const Hero = ({ personName }: HeroProps) => {
   const xSpring = useSpring(x, { stiffness: 100, damping: 10 });
   const ySpring = useSpring(y, { stiffness: 100, damping: 10 });
 
-  const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
-  const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50]);
+  const rotateY = useTransform(xSpring, [0, innerWidth || 1000], [-30, 30]);
+  const rotateX = useTransform(ySpring, [0, innerHeight || 800], [10, -50]);
+
+  const onClickTalkToMe = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div
@@ -57,38 +70,22 @@ const Hero = ({ personName }: HeroProps) => {
           <motion.div
             className="flex items-center justify-center"
             style={{
+              // Apply the transforms only if the mouse has moved
               rotateX: mouseMove ? rotateX : 0,
               rotateY: mouseMove ? rotateY : 0,
               transition: '0.1s'
             }}
           >
             <Image
-              src={'/person.png'}
+              src="/person.png"
               alt="Person Image"
               width={500}
               height={500}
-              priority={true}
+              priority
               className="h-auto w-[350px]"
             />
-            <motion.span
-              className="absolute text-3xl font-semibold text-white"
-              initial={{ scale: 0 }}
-              animate={{
-                opacity: buttonHover ? 0 : 1,
-                scale: buttonHover ? 2 : 0,
-                y: buttonHover ? -40 : 0
-              }}
-              transition={{ opacity: { delay: 0.4 } }}
-            >
-              Hi
-            </motion.span>
           </motion.div>
-          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
-            My Name is {personName} &
-          </h1>
-          <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
-            I design cool stuff 🤗
-          </p>
+          <Introduction />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -110,10 +107,10 @@ const Hero = ({ personName }: HeroProps) => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.7 }}
+          whileHover={{ scale: 1.05 }}
           href="#"
           className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
-          onMouseEnter={() => setButtonHover(true)}
-          onMouseLeave={() => setButtonHover(false)}
+          onClick={onClickTalkToMe}
         >
           Talk to me
         </motion.a>

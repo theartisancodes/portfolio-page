@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { arrowLeftIcon, experienceData } from '@/assets';
 import { Heading } from '@/components';
 
-
 const experienceStyles = clsx([
   'relative flex flex-col gap-y-3',
   'rounded-md border border-red-300 bg-white',
@@ -16,8 +15,6 @@ const experienceStyles = clsx([
 ]);
 
 const Experience = () => {
-  const date = new Date().getFullYear();
-
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -29,13 +26,19 @@ const Experience = () => {
   return (
     <div id="experience" className="relative py-20">
       <Heading text={'Experience'} />
-      <Image
-        src={'/education.png'}
-        alt={'Experience Image'}
-        width={400}
-        height={400}
-        className="absolute -top-4 right-0 opacity-70 lg:hidden"
-      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5, y: -50 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.7, type: 'spring', stiffness: 100 }}
+        className="absolute top-10 right-44 lg:hidden"
+      >
+        <Image
+          src={'/education.png'}
+          alt={'Experience Image'}
+          width={210}
+          height={300}
+        />
+      </motion.div>
       <div
         ref={containerRef}
         className="relative w-full h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
@@ -107,6 +110,19 @@ const Experience = () => {
           </div>
         ))}
 
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.7, type: 'spring', stiffness: 100 }}
+          className="absolute -bottom-28 left-16 lg:hidden z-50"
+        >
+          <Image
+            src={'/person-grown.png'}
+            alt={'Experience Image'}
+            width={450}
+            height={400}
+          />
+        </motion.div>
         <motion.div
           initial={{ scaleY: 0 }}
           style={{ scaleY: scrollY }}

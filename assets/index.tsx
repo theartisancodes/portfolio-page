@@ -1,76 +1,117 @@
-import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon';
-import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
-import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon';
-import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon';
-import AwardFillIcon from 'remixicon-react/AwardFillIcon';
-import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon';
-import CheckLineIcon from 'remixicon-react/CheckLineIcon';
-import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon';
-// Navbar
-import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon';
-import DownloadLineIcon from 'remixicon-react/DownloadLineIcon';
-import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon';
-import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon';
-// About Me
-import GithubFillIcon from 'remixicon-react/GithubFillIcon';
-import GithubLineIcon from 'remixicon-react/GithubLineIcon';
-import GroupLineIcon from 'remixicon-react/GroupLineIcon';
-import HistoryLineIcon from 'remixicon-react/HistoryLineIcon';
-import Home5LineIcon from 'remixicon-react/Home5LineIcon';
-import InstagramLineIcon from 'remixicon-react/InstagramLineIcon';
-// Toggle
-import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon';
-import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon';
-import Projector2LineIcon from 'remixicon-react/Projector2LineIcon';
-import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon';
-import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon';
-import StarFillIcon from 'remixicon-react/StarFillIcon';
-import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon';
-import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon';
-import UserLineIcon from 'remixicon-react/UserLineIcon';
-import UserStarLineIcon from 'remixicon-react/UserStarLineIcon';
-import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon';
+import {
+  RiArrowDropDownLine,
+  RiArrowLeftSFill,
+  RiArrowLeftSLine,
+  RiArrowRightSLine,
+  RiAwardFill,
+  RiBriefcaseLine,
+  RiCheckLine,
+  RiContactsBook2Line,
+  RiCopyrightLine,
+  RiDownloadLine,
+  RiGithubFill,
+  RiGithubLine,
+  RiGroupLine,
+  RiHistoryLine,
+  RiHome5Line,
+  RiInstagramLine,
+  RiLinkedinLine,
+  RiMoonFoggyFill,
+  RiProjector2Line,
+  RiProjectorLine,
+  RiStarFill,
+  RiStarHalfLine,
+  RiSunFoggyFill,
+  RiTwitterXLine,
+  RiUserLine
+} from '@remixicon/react';
 
 export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
-  <GithubLineIcon />
+  <a
+    href="https://www.instagram.com/theartisancodes/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <RiInstagramLine />
+  </a>,
+  <a
+    href="https://www.linkedin.com/in/josephnzau/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <RiLinkedinLine />
+  </a>,
+  <a
+    href="https://github.com/theartisancodes/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <RiGithubLine />
+  </a>,
+  <a
+    href="https://x.com/theartisancodes"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <RiTwitterXLine />
+  </a>
 ];
 
 export const aboutData = [
   {
     title: 'Github Repos',
     amount: 128,
-    icon: <GithubFillIcon />
+    icon: <RiGithubFill />
   },
   {
     title: 'Successful Projects',
     amount: 227,
-    icon: <Projector2LineIcon />
+    icon: <RiProjector2Line />
   },
   {
     title: 'Satisfied clients',
     amount: 176,
-    icon: <GroupLineIcon />
+    icon: <RiGroupLine />
   },
   {
     title: 'Awards and Recognition',
     amount: 107,
-    icon: <AwardFillIcon />
+    icon: <RiAwardFill />
   }
 ];
 
-export const downloadIcon = <DownloadLineIcon />;
-export const arrowLeftIcon = <ArrowLeftSFillIcon />;
+export const downloadIcon = <RiDownloadLine />;
+export const arrowLeftIcon = <RiArrowLeftSFill />;
 
 export const personName = 'Joe Nzau';
 
-export const aboutText =
-  "Hi, I'm Joe, a Senior Software Engineer with 7+ years of experience in frontend and full-stack development. I specialize in React, Next.js, and TypeScript, blending technical skills with creativity using Figma to build scalable, user-centric applications. I thrive on crafting solutions that look great and deliver seamless experiences.";
+export const aboutText = `Hi, I’m Joe, a Senior Software Engineer with 8 years of experience crafting high-performance digital solutions. I merge functionality, aesthetics, and efficiency to build intuitive, scalable products.
+  
+Passionate about software craftsmanship, I bring precision and creativity to every project—focusing on performance, usability, and long-term maintainability. 
+
+Beyond code, I thrive on problem-solving, collaboration, and innovation, always pushing boundaries to create impactful experiences. Let’s build something remarkable. 🚀`;
+
+export const introductionTexts = {
+  personName: 'Joe Nzau',
+  role: 'A Passionate Software Engineer & Problem-Solver',
+  description:
+    'I build seamless, high-performance, and scalable digital experiences.',
+  lookingFor: '🎯 Looking for an experienced developer? 🔗 Let’s Connect!'
+};
 
 export const experienceData = [
+  {
+    year: 2013,
+    title: 'Computer & Information Systems',
+    company: 'Kenya Methodist University',
+    url: 'https://kemu.ac.ke',
+    date: '2013',
+    timeline: 'Jan 2013 - December 2015',
+    experience: [
+      'Computer Science Fundamentals: DataStructures, Algorithms, and Operating Systems.'
+    ],
+    skills: ['Java', 'C++', 'Python', 'SQL', 'HTML', 'CSS', 'JavaScript']
+  },
   {
     year: 2017,
     title: 'Full Stack Developer',
@@ -79,9 +120,8 @@ export const experienceData = [
     date: '2017',
     timeline: 'March 2017 - September 2019',
     experience: [
-      'Reduced client churn by 30% with a decision-support system.',
-      'Increased client connections by 100%, contributing to significant funding.',
-      'Ranked in the top 1% of junior developers in the Andela Bootcamp.'
+      'Built scalable applications to carry out decision support for allocating software engineers to clients.',
+      'Eased the speed of hiring talent by 40% through the development of a talent matching algorithm.'
     ],
     skills: ['React', 'Node.js', 'Python', 'gRPC', 'PostgreSQL', 'REST API']
   },
@@ -94,8 +134,7 @@ export const experienceData = [
     timeline: 'Jan 2019 - August 2019',
     experience: [
       'Improved client acquisition and payment processing efficiency.',
-      'Reduced hiring time and costs by transitioning from ClojureScript to React.',
-      'Decreased code duplication and streamlined development processes.'
+      'Reduced hiring time and costs by transitioning from ClojureScript to React.'
     ],
     skills: [
       'React',
@@ -107,7 +146,7 @@ export const experienceData = [
     ]
   },
   {
-    year: 2019,
+    year: 2015,
     title: 'Senior Frontend Developer',
     company: 'Lori Systems',
     url: 'https://www.lorisystems.com/',
@@ -115,9 +154,7 @@ export const experienceData = [
     timeline: 'October 2019 - Current',
     experience: [
       'Enhanced operational efficiency and scalability by developing core business applications. ',
-      'Improved cargo matching by 25% through a responsive PWA and boosted web app speed by 30% using advanced Webpack techniques.',
-      'Achieved 90% code coverage, reduced bugs by 20%, and cut bundle size by 90%, lowering development costs by 15%.',
-      'Mentored junior developers, significantly improving team productivity.'
+      'Built SaaS products that enabled clients to manage logistics and supply chain operations.'
     ],
     skills: [
       'React',
@@ -201,8 +238,8 @@ export const skillsData = [
   }
 ];
 
-export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />];
-export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />];
+export const starIcons = [<RiStarFill />, <RiStarHalfLine />];
+export const arrowIcons = [<RiArrowLeftSLine />, <RiArrowRightSLine />];
 
 export const reviewsData = [
   {
@@ -370,7 +407,7 @@ export const pricingPlans = [
   }
 ];
 
-export const checkIcon = <CheckLineIcon />;
+export const checkIcon = <RiCheckLine />;
 
 // Q & A
 export const questions = [
@@ -432,42 +469,42 @@ export const questions = [
   }
 ];
 
-export const questionArrow = <ArrowDropDownLineIcon />;
+export const questionArrow = <RiArrowDropDownLine />;
 
-export const copyRightIcon = <CopyrightLineIcon />;
+export const copyRightIcon = <RiCopyrightLine />;
 
 export const navbarData = [
   {
     id: 'home',
     name: 'Home',
-    icon: <Home5LineIcon />
+    icon: <RiHome5Line />
   },
   {
     id: 'about',
     name: 'About',
-    icon: <UserLineIcon />
+    icon: <RiUserLine />
   },
   {
     id: 'experience',
     name: 'MyRoad',
-    icon: <HistoryLineIcon />
+    icon: <RiHistoryLine />
   },
   {
     id: 'skills',
     name: 'Skills',
-    icon: <BriefcaseLineIcon />
+    icon: <RiBriefcaseLine />
   },
   {
     id: 'projects',
     name: 'Projects',
-    icon: <ProjectorLineIcon />
+    icon: <RiProjectorLine />
   },
   {
     id: 'contact',
     name: 'Contact',
-    icon: <ContactsBook2LineIcon />
+    icon: <RiContactsBook2Line />
   }
 ];
 
-export const sunIcon = <SunFoggyFillIcon />;
-export const moonIcon = <MoonFoggyFillIcon />;
+export const sunIcon = <RiSunFoggyFill />;
+export const moonIcon = <RiMoonFoggyFill />;
