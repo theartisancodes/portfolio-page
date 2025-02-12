@@ -2,13 +2,12 @@ import React from 'react';
 import { Outfit } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
 import './globals.css';
+import type { Metadata } from 'next';
+import { metadata as siteMetadata } from './metadata';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Joe Nzau',
-  description: 'Portfolio Website'
-};
+export const metadata: Metadata = siteMetadata;
 
 interface RootLayoutProps {
   children: React.ReactNode;

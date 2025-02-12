@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { personName } from '@/assets';
 import {
   About,
   Contact,
@@ -9,10 +8,7 @@ import {
   Hero,
   Load,
   Navbar,
-  PricingPlans,
   Projects,
-  Questions,
-  Reviews,
   Skills,
   Toggle
 } from '@/components';

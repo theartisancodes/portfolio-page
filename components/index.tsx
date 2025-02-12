@@ -11,7 +11,6 @@ import Project from './Project';
 import Projects from './Projects';
 import Question from './Question';
 import Questions from './Questions';
-import Reviews from './Reviews';
 import Skills from './Skills';
 import Toggle from './Toggle';
 
@@ -29,7 +28,6 @@ export {
   Projects,
   Question,
   Questions,
-  Reviews,
   Skills,
   Toggle
 };

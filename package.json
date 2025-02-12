@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_ENV=production next build --experimental-build-mode `compile`",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -30,6 +30,8 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
     "eslint": "^9.17.0",

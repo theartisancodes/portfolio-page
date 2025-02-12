@@ -12,7 +12,6 @@ oauth2Client.setCredentials({
   refresh_token: process.env.EMAIL_REFRESH_TOKEN
 });
 
-
 export async function POST(req: NextRequest) {
   try {
     const { name, email, subject, message } = await req.json();
