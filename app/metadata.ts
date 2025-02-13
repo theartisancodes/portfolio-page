@@ -1,4 +1,5 @@
 export const metadata = {
-  title: 'Crafts By Joe',
-  description: 'Crafts by Joe'
+  title: 'Crafted By Joe',
+  description: 'A Passionate Software Engineer & Problem-Solver\n' +
+    '\n'
 };
