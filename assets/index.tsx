@@ -5,10 +5,15 @@ import {
   RiArrowRightSLine,
   RiAwardFill,
   RiBriefcaseLine,
+  RiBuilding2Line,
+  RiBuilding3Line,
   RiCheckLine,
+  RiCodeBoxLine,
+  RiCodeLine,
   RiContactsBook2Line,
   RiCopyrightLine,
   RiDownloadLine,
+  RiExchangeDollarLine,
   RiGithubFill,
   RiGithubLine,
   RiGroupLine,
@@ -60,23 +65,31 @@ export const heroIcons = [
 export const aboutData = [
   {
     title: 'Github Repos',
-    amount: 128,
+    amount: 45,
+    mustShowK: false,
+    mustShowCurrency: false,
     icon: <RiGithubFill />
   },
   {
-    title: 'Successful Projects',
-    amount: 227,
-    icon: <RiProjector2Line />
+    title: 'Enterprise Solutions Built',
+    amount: 20,
+    mustShowK: false,
+    mustShowCurrency: false,
+    icon: <RiCodeBoxLine />
   },
   {
-    title: 'Satisfied clients',
-    amount: 176,
+    title: 'User Engagement & Retention',
+    amount: 100,
+    mustShowK: true,
+    mustShowCurrency: false,
     icon: <RiGroupLine />
   },
   {
-    title: 'Awards and Recognition',
-    amount: 107,
-    icon: <RiAwardFill />
+    title: 'Funding Raised for Products',
+    amount: 200,
+    mustShowK: false,
+    mustShowCurrency: true,
+    icon: <RiExchangeDollarLine />
   }
 ];
 
@@ -279,18 +292,17 @@ export const reviewsData = [
   }
 ];
 
-// Projects
 export const projectsData = [
   {
-    name: 'SparkleGrove.com',
-    desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-    url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML']
+    name: 'storeit.craftedbyjoe.com',
+    desc: 'StoreIt is a cutting-edge file storage application designed to simplify how users upload, manage, and organize their files securely.',
+    url: '/projects/image-1.png',
+    tech: ['NextJS', 'Tailwind', 'Appwrite', 'Framer Motion']
   },
   {
-    name: 'TechTrekker.net',
-    desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-    url: '/projects/image-2.jpg',
+    name: 'finflow.craftedbyjoe.com',
+    desc: 'FinFlow is a modern, feature-rich banking platform designed to provide seamless financial management for users.',
+    url: '/projects/image-2.png',
     tech: ['Figma', 'Photoshop']
   },
   {
