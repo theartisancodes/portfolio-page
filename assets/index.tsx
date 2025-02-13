@@ -297,69 +297,50 @@ export const projectsData = [
     name: 'storeit.craftedbyjoe.com',
     desc: 'StoreIt is a cutting-edge file storage application designed to simplify how users upload, manage, and organize their files securely.',
     url: '/projects/image-1.png',
-    tech: ['NextJS', 'Tailwind', 'Appwrite', 'Framer Motion']
+    tech: ['NextJS', 'TailwindCSS', 'Appwrite', 'Framer Motion']
   },
   {
     name: 'finflow.craftedbyjoe.com',
     desc: 'FinFlow is a modern, feature-rich banking platform designed to provide seamless financial management for users.',
     url: '/projects/image-2.png',
-    tech: ['Figma', 'Photoshop']
+    tech: ['NextJS', 'TailwindCSS', 'Appwrite']
   },
   {
-    name: 'CozyNestHomes.org',
-    desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
+    name: '3dportfolio.craftedbyjoe.com',
+    desc: 'This project is a 3D portfolio website built using modern tools and libraries, including:',
+    url: '/projects/image-10.jpg',
+    tech: ['ReactJS', 'ThreeJS', 'Vite', 'TailwindCSS']
+  },
+  {
+    name: 'WIP - Zero Budget',
+    desc: 'A resource for budgeting and financial planning, offering tools and advice for managing money effectively.',
     url: '/projects/image-3.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript']
+    tech: ['NextJS', 'NodeJS', 'GraphQL', 'TailwindCSS']
   },
-  {
-    name: 'WanderLuxeTravels.co',
-    desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-    url: '/projects/image-4.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS']
-  },
-  {
-    name: 'ByteBoosters.io',
-    desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-    url: '/projects/image-5.jpg',
-    tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS']
-  },
+
   {
     name: 'GreenLeafGardens.biz',
     desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
     url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', 'CSS', 'FramerMotion']
+    tech: ['ReactJS', 'TailwindCSS', 'FramerMotion']
   },
   {
     name: 'PixelPerfectDesigns.info',
     desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
     url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion']
+    tech: ['NextJS', 'FramerMotion', 'Vite']
   },
   {
-    name: 'HarmonyHealthHub.com',
+    name: 'WIP',
     desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
     url: '/projects/image-8.jpg',
     tech: ['NextJS', 'ReactJS', 'FramerMotion']
   },
-  {
-    name: 'StellarSkiesAstronomy.org',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-9.jpg',
-    tech: ['ReactJS', 'JavaScript', 'ThreeJS']
-  },
-  {
-    name: 'UrbanEatsDelights.com',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-10.jpg',
-    tech: ['NextJS', 'ThreeJS']
-  }
 ];
 
 export const projectsButton = [
   'All',
-  'HTML',
-  'CSS',
-  'JavaScript',
+  'GraphQL',
   'ReactJS',
   'TailwindCSS',
   'NextJS',
