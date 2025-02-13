@@ -41,7 +41,7 @@ const Toggle = ({ children }: ToggleProps) => {
   return (
     <main ref={mainRef}>
       <div className="bg-zinc-50 dark:bg-zinc-800">
-        <div className="max-w-[1200px] xl:w-full mx-auto flex justify-center xl:px-[90px] sm:pl-[80px] sm:pr-5 overflow-hidden">
+        <div className="max-w-[1200px] xl:w-full mx-auto flex justify-center xl:px-[90px] sm:pl-[80px] sm:pr-5 ssm:px-12 overflow-hidden">
           <button
             onClick={() => {
               if (!darkTheme) {

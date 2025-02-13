@@ -38,7 +38,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <>
+    <div className="ssm:contents">
       <Load />
       <Toggle>
         <Navbar id={id} />
@@ -51,6 +51,6 @@ export default function Home() {
           <Contact />
         </div>
       </Toggle>
-    </>
+    </div>
   );
 }
