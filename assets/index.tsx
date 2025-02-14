@@ -306,47 +306,35 @@ export const projectsData = [
     tech: ['NextJS', 'TailwindCSS', 'Appwrite']
   },
   {
-    name: '3dportfolio.craftedbyjoe.com',
-    desc: 'This project is a 3D portfolio website built using modern tools and libraries, including:',
+    name: 'WIP - podcastai.craftedbyjoe.com',
+    desc: "This is an podcast using Google's NotebookLM to generate audio from text for a podcast",
     url: '/projects/image-10.jpg',
-    tech: ['ReactJS', 'ThreeJS', 'Vite', 'TailwindCSS']
+    tech: ['NextJS', 'AI', 'TailwindCSS']
   },
   {
-    name: 'WIP - Zero Budget',
+    name: 'WIP - zerobudget.craftedbyjoe.com',
     desc: 'A resource for budgeting and financial planning, offering tools and advice for managing money effectively.',
-    url: '/projects/image-3.jpg',
+    url: '/projects/image-5.png',
     tech: ['NextJS', 'NodeJS', 'GraphQL', 'TailwindCSS']
   },
-
   {
-    name: 'GreenLeafGardens.biz',
-    desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-    url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', 'FramerMotion']
-  },
-  {
-    name: 'PixelPerfectDesigns.info',
-    desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-    url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion', 'Vite']
-  },
-  {
-    name: 'WIP',
+    name: 'WIP - wellnesshub.craftedbyjoe.com',
     desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
     url: '/projects/image-8.jpg',
     tech: ['NextJS', 'ReactJS', 'FramerMotion']
-  },
+  }
 ];
 
 export const projectsButton = [
   'All',
-  'GraphQL',
+  'AI',
   'ReactJS',
   'TailwindCSS',
   'NextJS',
   'FramerMotion',
   'ThreeJS',
-  'NodeJS'
+  'NodeJS',
+  'GraphQL'
 ];
 
 // Pricing Plans
