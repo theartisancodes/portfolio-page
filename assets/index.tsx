@@ -297,13 +297,13 @@ export const projectsData = [
     name: 'storeit.craftedbyjoe.com',
     desc: 'StoreIt is a cutting-edge file storage application designed to simplify how users upload, manage, and organize their files securely.',
     url: '/projects/image-1.png',
-    tech: ['NextJS', 'TailwindCSS', 'Appwrite', 'Framer Motion']
+    tech: ['NextJS', 'ReactJS', 'TailwindCSS', 'Appwrite', 'Framer Motion']
   },
   {
     name: 'finflow.craftedbyjoe.com',
     desc: 'FinFlow is a modern, feature-rich banking platform designed to provide seamless financial management for users.',
     url: '/projects/image-2.png',
-    tech: ['NextJS', 'TailwindCSS', 'Appwrite']
+    tech: ['NextJS', 'ReactJS', 'TailwindCSS', 'Appwrite']
   },
   {
     name: 'podcast.craftedbyjoe.com',
@@ -321,7 +321,7 @@ export const projectsData = [
     name: 'WIP - zerobudget.craftedbyjoe.com',
     desc: 'A resource for budgeting and financial planning, offering tools and advice for managing money effectively.',
     url: '/projects/image-5.png',
-    tech: ['NextJS', 'NodeJS', 'GraphQL', 'TailwindCSS']
+    tech: ['NextJS', 'ReactJS', 'NodeJS', 'GraphQL', 'TailwindCSS']
   }
 ];
 
