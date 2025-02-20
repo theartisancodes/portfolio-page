@@ -306,22 +306,22 @@ export const projectsData = [
     tech: ['NextJS', 'TailwindCSS', 'Appwrite']
   },
   {
-    name: 'WIP - podcastai.craftedbyjoe.com',
-    desc: "This is an podcast using Google's NotebookLM to generate audio from text for a podcast",
-    url: '/projects/image-10.jpg',
-    tech: ['NextJS', 'AI', 'TailwindCSS']
+    name: 'podcast.craftedbyjoe.com',
+    desc: "This is an podcast using OpenAI's TTS model to generate audio from text for a podcast",
+    url: '/projects/image-3.png',
+    tech: ['NextJS', 'OpenAI', 'TailwindCSS']
+  },
+  {
+    name: 'WIP - burnzone.craftedbyjoe.com',
+    desc: 'BurnZone is a fitness app that helps users track their workouts, set fitness goals, and monitor their progress.',
+    url: '/projects/image-4.png',
+    tech: ['NextJS', 'FramerMotion', 'Python', 'TailwindCSS']
   },
   {
     name: 'WIP - zerobudget.craftedbyjoe.com',
     desc: 'A resource for budgeting and financial planning, offering tools and advice for managing money effectively.',
     url: '/projects/image-5.png',
     tech: ['NextJS', 'NodeJS', 'GraphQL', 'TailwindCSS']
-  },
-  {
-    name: 'WIP - wellnesshub.craftedbyjoe.com',
-    desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
-    url: '/projects/image-8.jpg',
-    tech: ['NextJS', 'ReactJS', 'FramerMotion']
   }
 ];
 
@@ -334,7 +334,8 @@ export const projectsButton = [
   'FramerMotion',
   'ThreeJS',
   'NodeJS',
-  'GraphQL'
+  'GraphQL',
+  ' Python'
 ];
 
 // Pricing Plans
