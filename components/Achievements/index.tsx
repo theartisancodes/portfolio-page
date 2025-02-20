@@ -28,7 +28,7 @@ const Achievements = ({
     });
 
     return () => unsubscribe();
-  }, [motionValue, springValue, amount]);
+  }, [amount]);
 
   return (
     <div className="flex items-end gap-x-3">
