@@ -86,7 +86,7 @@ export const aboutData = [
   },
   {
     title: 'Funding Raised for Products',
-    amount: 200,
+    amount: 280,
     mustShowK: false,
     mustShowCurrency: true,
     icon: <RiExchangeDollarLine />
