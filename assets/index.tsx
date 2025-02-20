@@ -335,7 +335,7 @@ export const projectsButton = [
   'ThreeJS',
   'NodeJS',
   'GraphQL',
-  ' Python'
+  'Python'
 ];
 
 // Pricing Plans
